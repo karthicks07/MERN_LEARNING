@@ -1,0 +1,9 @@
+h1,p{
+    text-align: center;
+}
+img{
+    border-radius: 7%;
+}
+table,td,tr,th{
+    border: 2px solid black;
+}
