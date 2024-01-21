@@ -42,15 +42,6 @@ button{
 .sub_re:hover{
     background-color: rgb(37, 84, 253);
 }
-input{
-    height: 20px;
-    width: 200px;
-    background-color: rgb(243, 243, 243);
-    border-radius: 5px;
-}
-.radio{
-    height: 18px;
-}
 button:hover{
     color: white;
     transform: translateY(-10px);
