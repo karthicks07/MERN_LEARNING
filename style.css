@@ -1,9 +1,82 @@
-h1,p{
+body{
+    background-color: rgb(0, 0, 0);
+    color: rgb(204, 204, 204);
+    padding: 20px;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100px;
     text-align: center;
+    padding: 10px;
+    color: blue;
 }
 img{
+    height: 250px;
+    width: 250px;
     border-radius: 7%;
+    align-items: center;
 }
-table,td,tr,th{
-    border: 2px solid black;
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 80px;
+    color: rgb(255, 255, 255);
+}
+button{
+    height: 40px;
+    width: 200px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(37, 84, 253);
+    border-color: transparent;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+button:hover{
+    color: white;
+    transform: translateY(-10px);
+    transition: 0.25s;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.item{
+    background-color: rgb(54, 51, 51);
+    padding: 20px;
+    border-radius: 9%;
+    margin: 10px;
+    width: 350px;
+    height: auto;
+    margin-top: 100px;
+    position: relative;
+    transition: 0.2s;
+    flex-wrap: wrap;
+}
+.item:hover{
+    transform: translateY(-20px);
+    transition: 0.6s;
+    background-color: rgb(214, 161, 1);
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: aliceblue;
+    color: black;
+}
+.grid-items{
+    background-color: brown;
+    border: 5px solid rgb(255, 255, 255);
+}
+@media (min-width: 800px){
+    .grid-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+}
+@media (max-width: 600px){
+    .grid-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
 }
