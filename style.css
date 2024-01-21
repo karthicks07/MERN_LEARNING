@@ -1,11 +1,11 @@
 body{
     background-color: rgb(0, 0, 0);
     color: rgb(204, 204, 204);
-    padding: 20px;
+    padding: 40px;
 }
 h1{
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100px;
+    font-size: 40px;
     text-align: center;
     padding: 10px;
     color: blue;
@@ -19,6 +19,7 @@ img{
 h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 80px;
+    font-size: 35px;
     color: rgb(255, 255, 255);
 }
 button{
@@ -30,6 +31,26 @@ button{
     border-radius: 5px;
     transition: 0.2s;
 }
+.sub_re{
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    border-color: transparent;
+}
+.sub_re:hover{
+    background-color: rgb(37, 84, 253);
+}
+input{
+    height: 20px;
+    width: 200px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px;
+}
+.radio{
+    height: 18px;
+}
 button:hover{
     color: white;
     transform: translateY(-10px);
@@ -38,23 +59,22 @@ button:hover{
 .container{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .item{
     background-color: rgb(54, 51, 51);
     padding: 20px;
-    border-radius: 9%;
+    border-radius: 10px;
     margin: 10px;
     width: 350px;
     height: auto;
-    margin-top: 100px;
     position: relative;
     transition: 0.2s;
     flex-wrap: wrap;
 }
 .item:hover{
-    transform: translateY(-20px);
+    transform: translateY(-10px);
     transition: 0.6s;
     background-color: rgb(214, 161, 1);
 }
@@ -63,6 +83,7 @@ button:hover{
     grid-template-columns: repeat(3,1fr);
     background-color: aliceblue;
     color: black;
+    height: 150px;
 }
 .grid-items{
     background-color: brown;
@@ -71,12 +92,27 @@ button:hover{
 @media (min-width: 800px){
     .grid-container{
         grid-template-columns: repeat(3,1fr);
+        background-color: aqua;
     }
     
 }
-@media (max-width: 600px){
+@media (max-width: 550px){
     .grid-container{
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(2,1fr);
+    }
+    .grid-items{
+        background-color: aqua;
+        border: 5px solid rgb(255, 255, 255);
+    }
+    h2{
+        font-size: 20px;
+    }
+    table,tr{
+        height: 50px;
+    }
+    img{
+        height: 150px;
+        width: 150px;
     }
     
 }
